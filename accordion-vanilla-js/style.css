@@ -1,0 +1,31 @@
+.accordion {
+  border: 1px solid #ccc;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+/* --- Active State Styling --- */
+/* Makes the header stand out when the section is open */
+.accordion-item.active .accordion-header {
+  background-color: #333;
+  color: white;
+}
+
+/* Shows the content when the parent has the .active class */
+.accordion-item.active .accordion-content {
+  display: block;
+}

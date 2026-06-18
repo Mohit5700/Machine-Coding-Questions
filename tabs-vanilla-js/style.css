@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Hide all content by default */
+.tabContent {
+  display: none;
+}
+
+.tabLink {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.tabLink:hover {
+  background-color: #ddd;
+}
+
+/* Visual indicator for the selected tab */
+.tabLink.active {
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/* Show content only when the .active class is applied */
+.tabContent.active {
+  display: block;
+}

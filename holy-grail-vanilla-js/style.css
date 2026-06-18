@@ -1,0 +1,68 @@
+/* --- Global Reset & Page Setup --- */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  /* flex-direction: column stacks Header, Container, and Footer vertically */
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh ensures the footer stays at the bottom even on empty pages */
+  min-height: 100vh;
+}
+
+/* --- Fixed Height Elements --- */
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* --- The Flex Wrapper --- */
+.container {
+  display: flex;
+  /* flex: 1 makes this container grow to fill all available vertical space */
+  flex: 1;
+}
+
+/* --- The Middle Sections --- */
+.main-content {
+  /* flex: 1 allows the main section to expand and take up remaining horizontal space */
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.side-content {
+  /* Fixed width for sidebars so they don't shrink */
+  width: 200px;
+  padding: 20px;
+}
+
+/* Specific styling for visual distinction */
+.side-left {
+  background-color: lightpink;
+}
+
+.side-right {
+  background-color: lightblue;
+}
+
+/* --- Responsive Adjustments --- */
+@media only screen and (max-width: 480px) {
+  .container {
+    /* Changes from horizontal row to vertical column for mobile screens */
+    flex-direction: column;
+  }
+
+  .side-content,
+  .main-content {
+    /* Override fixed widths to ensure elements span the full screen width */
+    width: 100%;
+  }
+
+  .side-content {
+    padding: 15px;
+  }
+}

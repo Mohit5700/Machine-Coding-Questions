@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.search-input {
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-suggestions {
+  width: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+li {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #ccc;
+}

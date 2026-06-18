@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+}
+
+.game {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  /* Mathematically scales the game box container size to match the column count */
+  max-width: calc(var(--board-size) * 100px);
+}
+
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  /* DYNAMIC GRID: Replaces the static '3' with your custom CSS variable */
+  grid-template-columns: repeat(var(--board-size), 1fr);
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  color: #333;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.winning-cell {
+  background-color: #c8f7c5; /* soft green */
+  border-color: #27ae60; /* darker green border */
+}

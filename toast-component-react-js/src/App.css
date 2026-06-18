@@ -1,0 +1,58 @@
+.toast-container {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.toast {
+  background-color: green;
+  width: 18rem;
+  padding: 1.5rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  position: relative;
+  animation: slideIn 1s ease;
+}
+
+.toast span {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.success {
+  background-color: #46af46;
+}
+
+.info {
+  background-color: #5899fe;
+}
+
+.warning {
+  background-color: #fca200;
+}
+
+.error {
+  background-color: #df5239;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.btn {
+  padding: 1rem;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

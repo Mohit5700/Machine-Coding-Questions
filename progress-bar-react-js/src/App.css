@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.progress {
+  position: relative; /* Needed so the absolute 'span' can center itself inside */
+  height: 25px;
+  width: 500px;
+  background-color: rgb(233, 236, 239);
+  border-radius: 15px;
+  border: 1px solid grey;
+  overflow: hidden; /* Clips the inner bar edges so they match the rounded corners */
+}
+
+.progress span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  /* z-index ensures text stays on top of the green bar which uses transform */
+  z-index: 2;
+}
+
+.progress div {
+  height: 100%;
+  background-color: #00c251;
+  transition: transform 0.1s linear; /* Optional: smooths out the steps */
+}

@@ -1,0 +1,12 @@
+.star-rating {
+  font-size: 40px;
+}
+
+span {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.gold {
+  color: gold;
+}
