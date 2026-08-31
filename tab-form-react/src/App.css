@@ -1,0 +1,37 @@
+.app {
+  font-family: sans-serif;
+}
+
+.tab-form {
+  width: 600px;
+  margin: 200px auto;
+}
+
+.heading-container {
+  display: flex;
+}
+
+.heading {
+  padding: 5px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.heading.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.tab-body {
+  border: 1px solid black;
+  height: 200px;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+  display: block;
+  font-size: small;
+}
