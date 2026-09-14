@@ -1,0 +1,31 @@
+.file-explorer {
+  padding: 20px;
+}
+
+.file-tree {
+  max-width: 300px;
+}
+
+.file-node {
+  margin: 4px 0;
+}
+
+.file-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.expand-button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.children {
+  margin-left: 20px;
+}
