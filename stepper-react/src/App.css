@@ -1,0 +1,60 @@
+/* Universal reset to normalize spacing and layout behavior */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Outer layout wrapper for entire stepper UI */
+.stepper {
+  margin: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Individual step row holding indicator node and label */
+.stepper-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+/* Circular step badge defaults (inactive state) */
+.step-number {
+  background-color: gray;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Anchor for absolute positioning of connecting line */
+}
+
+/* Connecting line linking step badges vertically */
+.step-line {
+  position: absolute;
+  background-color: gray;
+  height: 40px;
+  width: 2px;
+  top: 40px; /* Positions line directly beneath the badge node */
+}
+
+/* Active or completed state modifier */
+.active {
+  background-color: blue;
+}
+
+/* Action button default styles */
+button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  margin: 4px;
+}
